@@ -51,6 +51,8 @@ section p {
 }
 
 picture {
+    align-items:right;
+	text-align:right;
 }
 
 footer {
