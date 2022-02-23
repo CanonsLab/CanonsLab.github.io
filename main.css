@@ -19,7 +19,6 @@ header,footer {
 }
 
 header {
-	background-color: #999;
 	display: grid;
 	grid-template-columns: 200px 1fr;
 	padding: 7px;
@@ -30,18 +29,23 @@ header {
 
 h1 { 
   font-size: 1rem;
+  font-family: 'Russo One', sans-serif;
 }
 
-h3 {
+h2 {
   border-bottom: 1px solid #333;
+  font-family: 'Russo One', sans-serif;
 }
 
 main {
 	display: grid;
 	grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  	grid-template-rows: 1fr;
 	grid-gap: 5px;
 	padding: 5px;
+	grid-column: 1/3;
+	grid-row: 2/3;
+	font-family: 'Montserrat', sans-serif;
 }
 
 section {padding:7px;}
@@ -51,17 +55,25 @@ section p {
 }
 
 picture {
-    align-items:right;
-	text-align:right;
+	grid-row: 1/3;
+    grid-column: 2/4;
+    align-self: center;
+    justify-self: center;
+    margin: 20px 0;
 }
 
 footer {
-	background-color: white;
+	background-color: rgb(75, 147, 180);
 	color: black;
 	padding: 7px;
 	font-size: smaller;
 	grid-area: footer;
 	text-align:center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+fieldset {
+	color: rgb(255, 255, 0);
 }
 
 .himage { text-align: center; }
@@ -78,7 +90,7 @@ footer {
 	}
 	
 	header {
-	  background-color: #fff;
+	  background-color: rgb(75, 147, 180);
 	  grid-template-columns: 250px 1fr;
   }
 	
