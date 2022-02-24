@@ -1,6 +1,11 @@
-body {
+li {
 	font-size: 16px;
-	font-family: "Sansita", Ubuntu, sans-serif;
+	font-family: 'Montserrat', sans-serif;
+}
+  
+h2 {
+border-bottom: 1px solid #333;
+font-family: 'Russo One', sans-serif;
 }
 
 main {
@@ -9,6 +14,7 @@ main {
 	display: grid;
 	grid-template-columns: 1fr;
 	font-size: 0.8rem;
+    font-family: 'Russo One', sans-serif;
 }
 
 main section h2 {
