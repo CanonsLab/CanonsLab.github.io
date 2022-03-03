@@ -18,9 +18,9 @@
 
         <nav>
             <ul class="navigation">
-                <li><a class="ham" href="#" onclick="toggleMenu()"></a></li>
+                <li><a class="ham" href="#" onclick="toggleMenu()">Menu</a></li>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Preston</a></li>
+                <li><a href="#"><b>Preston</b></a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
                 <li><a href="#">Storm Center</a></li>
@@ -32,13 +32,53 @@
         <main>
             <h2>Preston Idaho</h2>
             <div class="content">Weather Summary</div>
-            <div class="content">5 Day Forecast</div>
+            <div class="content">
+                <h2>5 Day Forecast</h2>
+                <div class="flex">
+                    <div class="flex-col">
+                        <span class="col-head">1</span>
+                        <img src="weather-icon.png" alt="weather icon">
+                        <span class="data">Monday</span>
+                    </div>
+                    <div class="flex-col">
+                        <span class="col-head">2</span>
+                        <img src="weather-icon.png" alt="weather icon">
+                        <span class="data">Tuesday</span>
+                    </div>
+                    <div class="flex-col">
+                        <span class="col-head">3</span>
+                        <img src="weather-icon.png" alt="weather icon">
+                        <span class="data">Wednesday</span>
+                    </div>
+                    <div class="flex-col">
+                        <span class="col-head">4</span>
+                        <img src="weather-icon.png" alt="weather icon">
+                        <span class="data">Thursday</span>
+                    </div>
+                    <div class="flex-col">
+                        <span class="col-head">5</span>
+                        <img src="weather-icon.png" alt="weather icon">
+                        <span class="data">Friday</span>
+                    </div>
+                </div>
+            </div>
             <div class="content">Article</div>
             <div class="content">Contact Information</div>
+            <h2><b>Today</b></h2>
+            <p class="content">Tomorrow there is 60% chance of rain with wind speeds around 10 mph. Remember to bring to bring a raincoat.</p>
+            <img class="content" src="preston-rain.jpg" alt="weather story image">
+            <h2>Town Events</h2>
+            <ul class="content">
+                <li>Preston Public Town Hall Event: March 19th 2022</li>
+                <li>Tulip Festival at Thanksgiving Point: April 8th - May 7th 2022</li>
+            </ul>
         </main>
 
         <footer>
+            <img class="map" src="preston4.jpg" alt="map image of Preston">
+            <p>Contact Info: jen21061@byui.edu</p>
             <p>©Thunder Bros Weather | Attributions | Canon Jensen</p>
+            <a href="#">Terms of Service</a>
             <fieldset><span id="currentdate"></span></fieldset>
         </footer>
 

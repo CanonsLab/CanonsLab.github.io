@@ -1,3 +1,5 @@
+
+
 body {
     font-family: 'Roboto Serif', sans-serif;
     margin: auto;
@@ -29,7 +31,7 @@ h1 h2 {
     border: 1px dashed #000;
     padding: 15px;
     background-color: #4f5d73;
-    color: rgb(0, 162, 255);
+    color: #000;
     max-width: 500px;
 }
 
@@ -76,6 +78,49 @@ nav {
     display: block;
 }
 
+.flex {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.flex-col {
+	flex: 1;
+	background-color: #f5cf87;
+	border-bottom: 1px solid #333;
+	border-left: 1px solid #333;
+	text-align: center;
+}
+
+.flex-col:hover, td:hover {
+	opacity: 0.75;
+	background-color: black;
+	color: white;
+}
+.flex, .grid {
+	border-right: 1px solid #333;
+}
+
+.col-head {
+	display: block;
+	padding: 5px;
+	border-bottom: 1px solid #333;
+	text-align: center;
+}
+
+.data {
+	display: block;
+	padding: 0 5px 5px;
+	font-size: 0.8rem;
+	text-align: center;
+}
+
+.col-head {
+	font-weight: 700;
+	font-size: 1rem;
+	background-color: black;
+	color: white;
+}
+
 @media only screen and (max-width: 32.5em) {
     h1 h2 {
         font-family: 'Abril Fatface', cursive;
@@ -112,7 +157,6 @@ nav {
         font-size: clamp(1rem, 2vmin, 1.5rem);
     }
     
-    
     .navigation a:hover {
         color: white;
         background-color: black;
@@ -122,14 +166,69 @@ nav {
         display: block;
     }
     
+    .flex {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+    .flex-col {
+        flex: auto;
+        background-color: #f5cf87;
+        border-bottom: 1px solid #333;
+        border-left: 1px solid #333;
+        text-align: center;
+    }
+    
+    .flex-col:hover, td:hover {
+        opacity: 0.75;
+        background-color: black;
+        color: white;
+    }
+    .flex, .grid {
+        border-right: 1px solid #333;
+    }
+    
+    .col-head {
+        display: block;
+        padding: 5px;
+        border-bottom: 1px solid #333;
+        text-align: center;
+    }
+    
+    
+    
+    .data {
+        display: block;
+        padding: 0 5px 5px;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    
+    .col-head {
+        font-weight: 700;
+        font-size: 1rem;
+        background-color: black;
+        color: white;
+    }
 }
 
 @media only screen and (min-width: 56em) {
     h1 h2 {
         font-family: 'Abril Fatface', cursive;
     }
+
+    main .story .story-image {
+        display: block;
+        margin: 10px auto;
+        padding: 15px;
+        color: #000;
+        max-width: 500px;
+    }
+
+
     .content {
         background-color: rgb(255, 255, 255);
+        max-width: 650px;
     }
 
     nav {
@@ -165,6 +264,48 @@ nav {
     .responsive li {
         display: block;
     }
+
+    .flex {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+    /* .flex-col {
+        flex: 1 1 auto;
+        background-color: #f5cf87;
+        border-bottom: 1px solid #333;
+        border-left: 1px solid #333;
+        text-align: center;
+    } */
+    
+    .flex-col:hover, td:hover {
+        opacity: 0.75;
+        background-color: black;
+        color: white;
+    }
+    .flex, .grid {
+        border-right: 1px solid #333;
+    }
+    
+    .col-head {
+        display: block;
+        padding: 5px;
+        border-bottom: 1px solid #333;
+        text-align: center;
+    }
+    
+    
+    .data {
+        display: block;
+        padding: 0 5px 5px;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    
+    .col-head {
+        font-weight: 700;
+        font-size: 1rem;
+        background-color: black;
+        color: white;
+    }
 }
-
-
