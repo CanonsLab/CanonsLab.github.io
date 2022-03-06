@@ -1,0 +1,3 @@
+.container {margin: 1rem auto; display:grid; grid-template-columns: 1fr; max-width: 6300px; align-self: center;}
+.item:hover {box-shadow: none}
+div img:hover {box-shadow: 0 0 50px #333;}
