@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Canon Jensen</title>
+        <meta name="description" content="Storm Center for reporting storms">
+        <link rel="stylesheet" href="stormcenter.css">
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto+Serif:wght@300&display=swap" rel="stylesheet">
+        <script defer src="script-preston.js"></script>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="images/lightning-logo.png" alt="logo">
+            <h1>Thunder Bros Weather</h1>
+            <div class="motto">Community matters</div>
+        </header>
+
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#" onclick="toggleMenu()">Menu</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#"><b>Preston</b></a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+            
+        </nav>
+
+        <main>
+            <h1>Storm Reporter</h1>
+            <form method="get" action="lesson-4/thanks.html">
+                <fieldset name="uinfo">
+                    <legend></legend>
+                    <label class="form-field"><div>Full Name</div><input type="text" pattern="[A-Za-z]" name="fname"></label>
+                    <label class="form-field"><div>Email</div><input type="email" name="email" placeholder="simonpeter@missionary.org"></label>
+                    <label class="form-field"><div>Phone Number*</div><input type="tel" name="phone" required></label>
+                    <label class="form-field"><div>Zip Code*</div><input type="number" pattern="[1-9]" name="zcode" required></label>
+                </fieldset>
+                <fieldset name="sinfo">
+                    <label class="form-field"><div>Storm Date</div><input type="date" name="sdate"></label>
+                    <label class="form-field"><div>Storm Type</div></label>
+                    <input list="stormtypes" name="stype">
+                    <datalist id="stormtypes">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                    <label class="form-field"><div>Storm Severity (1-10)</div><input type="range" name="sseverity" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"></label>
+                    <label class="form-field"><div>Storm Region</div>
+                        <select name="sregion">
+                                <option value="">Select Region &#9662;</option>
+                            <option value="Preston">Preston</option>
+                            <option value="Soda Springs">Soda Springs</option>
+                            <option value="Fish Haven">Fish Haven</option>
+                        </select>
+                        <div>User In-Danger Level</div>
+                        <label class="form-field"><input type="radio" name="dlevel" value="yes"> Yes</label>
+                        <label class="form-field"><input type="radio" name="dlevel" value="maybe"> Maybe</label>
+                </fieldset>
+                <fieldset name="ninfo">
+                    <label class="form-field"><div>Other Notes:</div><textarea id="notes" name="notes"></textarea></label>
+                </fieldset>
+                <fieldset name="submission">
+                    <input type="submit" value = "Report Storm">
+                </fieldset>
+            </form>
+        </main>
+
+        <footer>
+            <img class="map" src="images/preston4.jpg" alt="map image of Preston">
+            <p>Contact Info: jen21061@byui.edu</p>
+            <p>©Thunder Bros Weather | Attributions | Canon Jensen</p>
+            <a href="#">Terms of Service</a>
+            <fieldset><span id="currentdate"></span></fieldset>
+        </footer>
+        <script defer src="js/wind_chill.js"></script>
+    </body>
+
+</html>
