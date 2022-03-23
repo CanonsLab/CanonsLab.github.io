@@ -15,10 +15,14 @@ header {
     font-family: 'Abril Fatface', cursive;
 }
 
+.logo {
+    width: 150px;
+}
+
 .motto {
-    position: absolute;
+    position: relative;
     top: 90px;
-    right: 575px;
+    right: 300px;
 }
 
 h1 {
@@ -76,13 +80,18 @@ nav {
     max-width: 1048px;
 }
 
-.item {
-    border: 1px solid black;
+section {
     padding: 1rem;
+    border:1px solid black;
 }
 
 ul {
     list-style: none;
+}
+
+h2, h4, p, img {
+    padding: 10px;
+    width: fit-content;
 }
 
 @media only screen and (max-width: 930px) {
@@ -90,6 +99,12 @@ ul {
         width: 100%;
         height: 100%;
         aspect-ratio: auto;
+    }
+
+    .motto {
+        position: relative;
+        top: 110px;
+        right: 200px;
     }
     nav {
         margin: 0 auto;
@@ -121,13 +136,28 @@ ul {
         background-color: black;
     }
     .container {
-        margin: 1rem auto; 
-        display:grid; 
-        grid-template-columns: 1fr 1fr; 
-        max-width: 930px;
+        max-width: 600px;
+        margin: .5rem auto;
+        display: flex;   
     }
-    .item:hover {
-        box-shadow: none
+
+    section {
+        display: flex;
+	    flex-direction: row;
+        justify-content: space-evenly;
+        margin: 10px;
+        border:1px solid black;
+    }
+
+    section:nth-child(odd) {
+		flex-direction: row-reverse;
+	}
+
+    img {width: 100%; height: auto;}
+
+    h2, h4, p, img {
+        padding: 10px;
+        width: fit-content;
     }
 }
 
@@ -164,8 +194,12 @@ ul {
     
     .container {
         margin: 1rem auto; 
-        display:grid; 
-        grid-template-columns: 1fr 1fr; 
+        display: grid; 
+        grid-template-columns: 1fr; 
         max-width: 930px;
+    }
+
+    section {
+        display: grid;
     }
 }
