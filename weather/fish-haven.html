@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Canon Jensen</title>
+        <meta name="description" content="Preston town home page">
+        <link rel="stylesheet" href="CSS/styles-preston.css">
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto+Serif:wght@300&display=swap" rel="stylesheet">
+        <script defer src="js/script-preston.js"></script>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="images/lightning-logo.png" alt="logo">
+            <h1>Thunder Bros Weather</h1>
+            <div class="motto">Community matters</div>
+        </header>
+
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#" onclick="toggleMenu()">Menu</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#"><b>Fish Haven</b></a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+            
+        </nav>
+
+        <main>
+            <h2>Fish Haven Idaho</h2>
+            <div class="content">
+                <div class="herodiv">
+                    <picture>
+                        <img srcset="images/wdd230_image_franklinOriginal.jpeg" alt="hero image">
+                    </picture>
+                    <p class="label">Place holder</p>
+                    <section class="stats">
+                        <h2>Weather Summary</h2>
+                        <p>Currently: <span>38°F Broken Clouds</span></p>
+                        <p>Wind Chill: <span id="wind-chill"></span></p>
+                        <p>High: <span>41°F</span></p>
+                        <p>Humidity: <span>50%</span></p>
+                        <p>Wind Speed: <span>5 mph</span></p>
+                    </section>
+                </div>
+            </div>
+            <div class="content">
+                <h2>5 Day Forecast</h2>
+                <div class="flex">
+                    <div class="flex-col">
+                        <span class="col-head">1</span>
+                        <img src="images/weather-icon.png" alt="weather icon">
+                        <span class="data">Monday</span>
+                    </div>
+                    <div class="flex-col">
+                        <span class="col-head">2</span>
+                        <img src="images/weather-icon.png" alt="weather icon">
+                        <span class="data">Tuesday</span>
+                    </div>
+                    <div class="flex-col">
+                        <span class="col-head">3</span>
+                        <img src="images/weather-icon.png" alt="weather icon">
+                        <span class="data">Wednesday</span>
+                    </div>
+                    <div class="flex-col">
+                        <span class="col-head">4</span>
+                        <img src="images/weather-icon.png" alt="weather icon">
+                        <span class="data">Thursday</span>
+                    </div>
+                    <div class="flex-col">
+                        <span class="col-head">5</span>
+                        <img src="images/weather-icon.png" alt="weather icon">
+                        <span class="data">Friday</span>
+                    </div>
+                </div>
+            </div>
+            <div class="content">Article</div>
+            <div class="content">Contact Information</div>
+            <h2><b>Today</b></h2>
+            <p class="content">Tomorrow there is 60% chance of rain with wind speeds around 10 mph. Remember to bring to bring a raincoat.</p>
+            <img class="content" src="images/preston-rain.jpg" alt="weather story image">
+            <h2>Town Events</h2>
+            <ul class="content">
+                <li>Preston Public Town Hall Event: March 19th 2022</li>
+                <li>Tulip Festival at Thanksgiving Point: April 8th - May 7th 2022</li>
+            </ul>
+        </main>
+
+        <footer>
+            <img class="map" src="images/preston4.jpg" alt="map image of Preston">
+            <p>Contact Info: jen21061@byui.edu</p>
+            <p>©Thunder Bros Weather | Attributions | Canon Jensen</p>
+            <a href="#">Terms of Service</a>
+            <fieldset><span id="currentdate"></span></fieldset>
+        </footer>
+        <script defer src="js/wind_chill.js"></script>
+    </body>
+
+</html>

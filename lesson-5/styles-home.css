@@ -59,9 +59,14 @@ nav {
     font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 
+
 .navigation a:hover {
     color: white;
     background-color: black;
+}
+
+.responsive li {
+    display: block;
 }
 
 .container {
