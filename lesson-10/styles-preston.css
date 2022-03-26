@@ -82,18 +82,31 @@ nav {
 
 .flex {
 	display: flex;
-	flex-flow: row wrap;
+    width: 100%;
+    padding: 2px;
+    background-color: #f5cf87;
+    border: 2px #000;
+    border-style: double;
+    margin-top: -30px;
 }
 
-.flex-col {
+.flex img {
+    max-width: 50px;
+    max-height: 50px;
+    align-self: center;
+}
+
+
+section {
 	flex: 1;
 	background-color: #f5cf87;
 	border-bottom: 1px solid #333;
 	border-left: 1px solid #333;
 	text-align: center;
+    margin: 2px;
 }
 
-.flex-col:hover, td:hover {
+section:hover, td:hover {
 	opacity: 0.75;
 	background-color: black;
 	color: white;
@@ -237,7 +250,7 @@ picture img {
         flex-flow: row wrap;
     }
     
-    .flex-col {
+    section {
         flex: auto;
         background-color: #f5cf87;
         border-bottom: 1px solid #333;
@@ -245,7 +258,7 @@ picture img {
         text-align: center;
     }
     
-    .flex-col:hover, td:hover {
+    section:hover, td:hover {
         opacity: 0.75;
         background-color: black;
         color: white;
@@ -360,7 +373,7 @@ picture img {
         flex-flow: row wrap;
     }
     
-    /* .flex-col {
+    /* section {
         flex: 1 1 auto;
         background-color: #f5cf87;
         border-bottom: 1px solid #333;
@@ -368,7 +381,7 @@ picture img {
         text-align: center;
     } */
     
-    .flex-col:hover, td:hover {
+    section:hover, td:hover {
         opacity: 0.75;
         background-color: black;
         color: white;
