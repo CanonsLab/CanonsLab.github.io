@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Canon Jensen</title>
+        <meta name="description" content="Preston town home page">
+        <link rel="stylesheet" href="styles-preston.css">
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto+Serif:wght@300&display=swap" rel="stylesheet">
+        <script defer src="script-preston.js"></script>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="images/lightning-logo.png" alt="logo">
+            <h1>Thunder Bros Weather</h1>
+            <div class="motto">Community matters</div>
+        </header>
+
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#" onclick="toggleMenu()">Menu</a></li>
+                <li><a href="https://canonslab.github.io/lesson-5/index.html"><b>Home</b></a></li>
+                <li><a href="https://canonslab.github.io/weather/preston.html">Preston</a></li>
+                <li><a href="https://canonslab.github.io/weather/soda-springs.html">Soda Springs</a></li>
+                <li><a href="https://canonslab.github.io/weather/fish-haven.html">Fish Haven</a></li>
+                <li><a href="https://canonslab.github.io/lesson-4/stormcenter.html">Storm Center</a></li>
+                <li><a href="https://canonslab.github.io/weather/gallery-7.html">Gallery</a></li>
+            </ul>
+            
+        </nav>
+
+        <main>
+            <h2>Preston Idaho</h2>
+            <div class="content">
+                <div class="herodiv">
+                    <picture>
+                        <img srcset="images/wdd230_image_franklinOriginal.jpeg" alt="hero image">
+                    </picture>
+                    <p class="label">Place holder</p>
+                    <section class="stats">
+                        <h2>Weather Summary</h2>
+                        <p>Currently: <span id="current-temp"></span>°F <span id="weather-description"></span></p>
+                        <p>Wind Chill: <span id="wind-chill">N/A</span>°F</p>
+                        <p>High: <span id="high-temp"></span>°F</p>
+                        <p>Humidity: <span id="humidity"></span>%</p>
+                        <p>Wind Speed: <span id="wind-speed"></span> mph</p>
+                    </section>
+                </div>
+            </div>
+            <div class="content">
+                <h2 class="forecast">5 Day Forecast</h2>
+                <div class="flex">
+                </div>
+            </div>
+            <div class="content">Article</div>
+            <div class="content">Contact Information</div>
+            <h2><b>Today</b></h2>
+            <p class="content">Tomorrow there is 60% chance of rain with wind speeds around 10 mph. Remember to bring to bring a raincoat.</p>
+            <img class="content" src="images/preston-rain.jpg" alt="weather story image">
+            <h2>Town Events</h2>
+            <ul class="content">
+                <li>Preston Public Town Hall Event: March 19th 2022</li>
+                <li>Tulip Festival at Thanksgiving Point: April 8th - May 7th 2022</li>
+            </ul>
+        </main>
+
+        <footer>
+            <img class="map" src="images/preston4.jpg" alt="map image of Preston">
+            <p>Contact Info: jen21061@byui.edu</p>
+            <p>©Thunder Bros Weather | Attributions | Canon Jensen</p>
+            <a href="#">Terms of Service</a>
+            <fieldset><span id="currentdate"></span></fieldset>
+        </footer>
+        <script defer src="wind_chill.js"></script>
+        <script defer src="script-preston.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,477 @@
+
+
+body {
+    font-family: 'Roboto Serif', sans-serif;
+    margin: auto;
+}
+
+header {
+    background-color:rgb(0, 162, 255);
+    padding: 5px 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    vertical-align: sub;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.motto {
+    position: absolute;
+    top: 90px;
+    right: 575px;
+}
+
+h2 {
+    margin: 10px auto;
+    padding: 15px;
+    max-width: 500px;
+}
+
+h1 h2 {
+    font-family: 'Abril Fatface', cursive;
+}
+
+.content {
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed #000;
+    padding: 15px;
+    background-color: #4f5d73;
+    color: #000;
+    max-width: 500px;
+}
+
+footer {
+    margin: 10px auto;
+    padding: 15px;
+    font-style: italic;
+    max-width: 500px;
+}
+
+nav {
+    margin: 0 auto;
+    max-width: 760px;
+    background-color: rgb(0, 162, 255);
+}
+.navigation {
+    list-style: none;
+    padding: 0;
+}
+.navigation li:first-child {
+    display: block;
+}
+.navigation li {
+    display: none;
+}
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+
+.navigation a:hover {
+    color: white;
+    background-color: black;
+}
+
+.addings {
+    flex: 1;
+	background-color: #f5cf87;
+	
+	text-align: center;
+    margin: auto;
+    max-width: 50%;
+}
+
+.flex {
+	display: flex;
+    width: 100%;
+    padding: 2px;
+    background-color: #f5cf87;
+    border: 2px #000;
+    border-style: double;
+    margin-top: -30px;
+}
+
+.flex img {
+    max-width: 50px;
+    max-height: 50px;
+    align-self: center;
+}
+
+
+section {
+	flex: 1;
+	background-color: #f5cf87;
+	border-bottom: 1px solid #333;
+	border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    border-top: 1px solid #333;
+	text-align: center;
+    margin: 2px;
+}
+
+section:hover, td:hover {
+	opacity: 0.75;
+	background-color: black;
+	color: white;
+}
+.flex, .grid {
+	border-right: 1px solid #333;
+}
+
+.col-head {
+	display: block;
+	padding: 5px;
+	border-bottom: 1px solid #333;
+	text-align: center;
+}
+
+.data {
+	display: block;
+	padding: 0 5px 5px;
+	font-size: 0.8rem;
+	text-align: center;
+}
+
+.col-head {
+	font-weight: 700;
+	font-size: 1rem;
+	background-color: black;
+	color: white;
+}
+
+.herodiv {
+	margin: 10px auto;
+	position: relative;
+    max-width: 100%;
+    max-height: 90%;
+}
+
+.stats {
+    position: absolute;
+    top: 10px;
+    right: 230px;
+    padding-left: 0;
+	background: radial-gradient(#eee, #f5cf87);
+	border: 1px solid #000;
+	box-shadow: 0 0 30px #333;
+    width: 100;
+    max-height: 50%;
+    font-size: 9px;
+    text-align: left;
+    padding-bottom: 60px;
+    padding-top: .1px;
+    padding-left: 25px;
+    padding-right: 50px;
+}
+
+.label {
+    visibility: hidden;
+    position: absolute;
+    color: yellow;
+    top: 10px;
+    right: 30px;
+}
+
+.label:after {
+    visibility: Visible;
+    position: absolute;
+    color: yellow;
+    top: 10px;
+    right: 30px;
+    content: "Medium";
+}
+
+.stats span {
+    margin-top: 1px;
+	font-style: italic;
+	font-weight: 700;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+picture img {
+	box-shadow: 0 0 1rem #333;
+    max-width: 100%;
+}
+
+
+
+@media only screen and (max-width: 32.5em) {
+    h1 h2 {
+        font-family: 'Abril Fatface', cursive;
+    }
+    .content {
+        background-color: rgb(0, 162, 255);
+    }
+
+    header img {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: auto;
+    }
+
+    .content img{
+        height: 50%;
+    }
+
+    nav {
+        margin: 0 auto;
+        background-color: rgb(0, 162, 255);
+    }
+    .navigation {
+        list-style: none;
+        padding: 0;
+    }
+    .navigation li:first-child {
+        display: block;
+    }
+    .navigation li {
+        display: none;
+    }
+    .navigation a {
+        display: block;
+        padding: 0.75rem;
+        text-align: left;
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+        transition: 0.5s;
+        font-size: clamp(1rem, 2vmin, 1.5rem);
+    }
+    
+    .navigation a:hover {
+        color: white;
+        background-color: black;
+    }
+    
+    .responsive li {
+        display: block;
+    }
+    
+    .flex {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+    section {
+        flex: auto;
+        background-color: #f5cf87;
+        border-bottom: 1px solid #333;
+        border-left: 1px solid #333;
+        text-align: center;
+    }
+    
+    section:hover, td:hover {
+        opacity: 0.75;
+        background-color: black;
+        color: white;
+    }
+    .flex, .grid {
+        border-right: 1px solid #333;
+    }
+    
+    .col-head {
+        display: block;
+        padding: 5px;
+        border-bottom: 1px solid #333;
+        text-align: center;
+    }
+    
+    .data {
+        display: block;
+        padding: 0 5px 5px;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    
+    .col-head {
+        font-weight: 700;
+        font-size: 1rem;
+        background-color: black;
+        color: white;
+    }
+
+    .stats {
+        position: static;
+    }
+    
+    picture img {
+        box-shadow: 0 0 1rem #333;
+        max-width: 100%;
+    }
+
+    .label {
+        visibility: hidden;
+        position: absolute;
+        color: yellow;
+        top: 10px;
+        right: 30px;
+    }
+    
+    .label:after {
+        visibility: Visible;
+        position: absolute;
+        color: yellow;
+        top: 10px;
+        right: 30px;
+        content: "Small";
+    }
+}
+
+@media only screen and (min-width: 56em) {
+    h1 h2 {
+        font-family: 'Abril Fatface', cursive;
+    }
+
+    main .story .story-image {
+        display: block;
+        margin: 10px auto;
+        padding: 15px;
+        color: #000;
+        max-width: 500px;
+    }
+
+
+    .content {
+        background-color: rgb(255, 255, 255);
+        max-width: 650px;
+    }
+
+    nav {
+        margin: 0 auto;
+        background-color: rgb(0, 162, 255);
+    }
+    .navigation {
+        list-style: none;
+        padding: 0;
+    }
+    .navigation li:first-child {
+        display: block;
+    }
+    .navigation li {
+        display: none;
+    }
+    .navigation a {
+        display: block;
+        padding: 0.75rem;
+        text-align: left;
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+        transition: 0.5s;
+        font-size: clamp(1rem, 2vmin, 1.5rem);
+    }
+    
+    .navigation a:hover {
+        color: white;
+        background-color: black;
+    }
+    
+    .responsive li {
+        display: block;
+    }
+
+    .flex {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+    /* section {
+        flex: 1 1 auto;
+        background-color: #f5cf87;
+        border-bottom: 1px solid #333;
+        border-left: 1px solid #333;
+        text-align: center;
+    } */
+    
+    section:hover, td:hover {
+        opacity: 0.75;
+        background-color: black;
+        color: white;
+    }
+    .flex, .grid {
+        border-right: 1px solid #333;
+    }
+    
+    .col-head {
+        display: block;
+        padding: 5px;
+        border-bottom: 1px solid #333;
+        text-align: center;
+    }
+    
+    
+    .data {
+        display: block;
+        padding: 0 5px 5px;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    
+    .col-head {
+        font-weight: 700;
+        font-size: 1rem;
+        background-color: black;
+        color: white;
+    }
+
+    .herodiv {
+        margin: 10px auto;
+        position: relative;
+        max-width: 100%;
+        max-height: 90%;
+    }
+    
+    .stats {
+        position: absolute;
+        top: 10px;
+        right: 450px;
+        left: 10px;
+        background: radial-gradient(#eee, #f5cf87);
+        border: 1px solid #000;
+        padding: 1rem;
+        box-shadow: 0 0 30px #333;
+        width: 100;
+        max-height: 50%;
+        font-size: 9px;
+        text-align: left;
+    }
+    
+    .stats span {
+        font-style: italic;
+        font-weight: 700;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    picture img {
+        box-shadow: 0 0 1rem #333;
+        max-width: 100%;
+        max-height: 120%;
+    }
+
+    .label {
+        visibility: hidden;
+        position: absolute;
+        color: yellow;
+        top: 10px;
+        right: 30px;
+    }
+    
+    .label:after {
+        visibility: Visible;
+        position: absolute;
+        color: yellow;
+        top: 10px;
+        right: 30px;
+        content: "Large";
+    }
+}

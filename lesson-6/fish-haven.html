@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Canon Jensen</title>
+        <meta name="description" content="Preston town home page">
+        <link rel="stylesheet" href="CSS/styles-preston.css">
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto+Serif:wght@300&display=swap" rel="stylesheet">
+        <script defer src="js/script-preston.js"></script>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="images/lightning-logo.png" alt="logo">
+            <h1>Thunder Bros Weather</h1>
+            <div class="motto">Community matters</div>
+        </header>
+
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#" onclick="toggleMenu()">Menu</a></li>
+                <li><a href="https://canonslab.github.io/lesson-5/index.html"><b>Home</b></a></li>
+                <li><a href="https://canonslab.github.io/weather/preston.html">Preston</a></li>
+                <li><a href="https://canonslab.github.io/weather/soda-springs.html">Soda Springs</a></li>
+                <li><a href="https://canonslab.github.io/weather/fish-haven.html">Fish Haven</a></li>
+                <li><a href="https://canonslab.github.io/lesson-4/stormcenter.html">Storm Center</a></li>
+                <li><a href="https://canonslab.github.io/weather/gallery-7.html">Gallery</a></li>
+            </ul>
+            
+        </nav>
+
+        <main>
+            <h2>Fish Haven Idaho</h2>
+            <div class="content">
+                <div class="herodiv">
+                    <picture>
+                        <img srcset="images/wdd230_image_franklinOriginal.jpeg" alt="hero image">
+                    </picture>
+                    <p class="label">Place holder</p>
+                    <section class="stats">
+                        <h2>Weather Summary</h2>
+                        <p>Currently: <span>38°F Broken Clouds</span></p>
+                        <p>Wind Chill: <span id="wind-chill"></span></p>
+                        <p>High: <span>41°F</span></p>
+                        <p>Humidity: <span>50%</span></p>
+                        <p>Wind Speed: <span>5 mph</span></p>
+                    </section>
+                </div>
+            </div>
+            <div class="content">
+                <h2>5 Day Forecast</h2>
+                <div class="flex">
+                    
+                </div>
+            </div>
+            <div class="addings">
+                <h2 class="content">Upcoming Events</h2>
+            </div>
+            <div class="content">Contact Information</div>
+            <h2><b>Today</b></h2>
+            <p class="content">Tomorrow there is 60% chance of rain with wind speeds around 10 mph. Remember to bring to bring a raincoat.</p>
+            <img class="content" src="images/preston-rain.jpg" alt="weather story image">
+        </main>
+
+        <footer>
+            <img class="map" src="images/preston4.jpg" alt="map image of Preston">
+            <p>Contact Info: jen21061@byui.edu</p>
+            <p>©Thunder Bros Weather | Attributions | Canon Jensen</p>
+            <a href="#">Terms of Service</a>
+            <fieldset><span id="currentdate"></span></fieldset>
+        </footer>
+        <script defer src="js/wind_chill.js"></script>
+        <script defer src="js/fish-haven.js"></script>
+    </body>
+
+</html>
