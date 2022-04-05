@@ -53,14 +53,14 @@
             <form method="get" action="https://canonslab.github.io/wdd-230-final-project/form-conf.html">
                 <fieldset name="contact-form">
                     <legend></legend>
-                    <label class="form-field">Full Name:<input type="text" pattern="[A-Za-z]" name="fname" required></label>
-                    <label class="form-field">Email:<input type="email" name="email" required></label>
+                    <label class="form-field">Full Name:<input class="contact-p" type="text" pattern="[A-Za-z]" name="fname" required></label>
+                    <label class="form-field">Email:<input class="contact-p" type="email" name="email" required></label>
                 </fieldset>
             <fieldset name="ninfo">
-                <label class="form-field">Other Notes:<textarea id="notes" name="notes" placeholder="Questions or comments?"></textarea></label>
+                <label class="form-field">Other Notes: <textarea class="contact-n" id="notes" name="notes" placeholder="Questions or comments?"></textarea></label>
             </fieldset>
             <fieldset name="submission">
-                <input type="submit" value = "Send Message">
+                <input class="contact-s" type="submit" value = "Send Message">
             </fieldset>
             </form>
         </main>

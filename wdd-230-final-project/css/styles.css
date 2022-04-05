@@ -232,6 +232,19 @@ label {
     margin-left: 1%;
 }
 
+.contact-p {
+    margin-left: 36%;
+}
+
+.contact-s {
+    margin-left: 41%;
+}
+
+.contact-n {
+    padding: 30px;
+    text-align: left;
+}
+
 @media screen and (max-width: 1165px) {
     .top-img {
         width: 700px;
