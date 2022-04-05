@@ -1,6 +1,6 @@
 const weatherInfo = 'https://api.openweathermap.org/data/2.5/weather?id=3530103&units=imperial&appid=3c3f395856a764140e870d104facaf6d'
 const forecastInfo = 'https://api.openweathermap.org/data/2.5/forecast?id=3530103&units=imperial&appid=3c3f395856a764140e870d104facaf6d'
-
+const rentalInfo = 'wdd-230-final-project\data\rental_data.JSON'
 
 const daynames = [
 	"Sunday",
@@ -37,12 +37,12 @@ const fulldate = `${dayName}, ${d.getDate()} ${monthName} ${year}`;
 document.querySelector('#currentdate2').textContent = `Last updated: ${document.lastModified}`
 
 fetch(weatherInfo)
-  .then((response) => response.json())
-  .then((jsObject) => {
-    console.log(jsObject);
-    document.getElementById('current-temp').textContent = jsObject.main.temp;
-	document.getElementById('weather-description').textContent = jsObject.weather[0].description;
-	document.getElementById('humidity').textContent = jsObject.main.humidity;
+	.then((response) => response.json())
+	.then((jsObject) => {
+		console.log(jsObject);
+		document.getElementById('current-temp').textContent = jsObject.main.temp;
+		document.getElementById('weather-description').textContent = jsObject.weather[0].description;
+		document.getElementById('humidity').textContent = jsObject.main.humidity;
 	
   });
 fetch(forecastInfo)
@@ -75,3 +75,9 @@ fetch(forecastInfo)
 			}
 	}
 	)
+fetch(rentalInfo)
+	.then((response) => response.json())
+	.then((jsObject) => {
+		console.log(jsObject);
+		document.getElementById('cell-one').textContent = jsObject.rental_one[0].name;
+	});
