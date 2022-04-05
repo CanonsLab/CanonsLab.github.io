@@ -1,56 +1,58 @@
 {
-  "rental_one": [{
-    "id":1, 
-    "name":"Honda Metro Scooter",
-    "max_persons":1,
-    "half_day_r":"$20",
-    "full_day_r":"$30",
-    "half_day_w":"$25",
-    "full_day_w":"$35"
-  }],
-  "rental_two": {
-    "id":2, 
-    "name":"Honda Dio Scooter",
-    "max_persons":2,
-    "half_day_r":"$30",
-    "full_day_r":"$40",
-    "half_day_w":"$35",
-    "full_day_w":"$45"
-  },
-  "rental_three": [{
-    "id":3, 
-    "name":"Honda PCX150 Scooter",
-    "max_persons":2,
-    "half_day_r":"$40",
-    "full_day_r":"$50",
-    "half_day_w":"$45",
-    "full_day_w":"$55"
-  }],
-  "rental_four": [{
-    "id":4, 
-    "name":"Honda Pioneer ATV",
-    "max_persons":4,
-    "half_day_r":"$50",
-    "full_day_r":"$70",
-    "half_day_w":"$60",
-    "full_day_w":"$80"
-  }],
-  "rental_five": [{
-    "id":5, 
-    "name":"Jeep Wrangler-4 door with a/c",
-    "max_persons":5,
-    "half_day_r":"$70",
-    "full_day_r":"$100",
-    "half_day_w":"$85",
-    "full_day_w":"$125"
-  }],
-  "rental_six": [{
-    "id":6, 
-    "name":"Jeep Wrangler-2 door",
-    "max_persons":4,
-    "half_day_r":"$60",
-    "full_day_r":"$85",
-    "half_day_w":"$70",
-    "full_day_w":"$90"
-  }]
+  "rentals": [
+    {
+      "id":1, 
+      "name":"Honda Metro Scooter",
+      "max_persons":1,
+      "half_day_r":"$20",
+      "full_day_r":"$30",
+      "half_day_w":"$25",
+      "full_day_w":"$35"
+    },
+    {
+      "id":2, 
+      "name":"Honda Dio Scooter",
+      "max_persons":2,
+      "half_day_r":"$30",
+      "full_day_r":"$40",
+      "half_day_w":"$35",
+      "full_day_w":"$45"
+    },
+    {
+      "id":3, 
+      "name":"Honda PCX150 Scooter",
+      "max_persons":2,
+      "half_day_r":"$40",
+      "full_day_r":"$50",
+      "half_day_w":"$45",
+      "full_day_w":"$55"
+    },
+    {
+      "id":4, 
+      "name":"Honda Pioneer ATV",
+      "max_persons":4,
+      "half_day_r":"$50",
+      "full_day_r":"$70",
+      "half_day_w":"$60",
+      "full_day_w":"$80"
+    },
+    {
+      "id":5, 
+      "name":"Jeep Wrangler-4 door with a/c",
+      "max_persons":5,
+      "half_day_r":"$70",
+      "full_day_r":"$100",
+      "half_day_w":"$85",
+      "full_day_w":"$125"
+    },
+    {
+      "id":6, 
+      "name":"Jeep Wrangler-2 door",
+      "max_persons":4,
+      "half_day_r":"$60",
+      "full_day_r":"$85",
+      "half_day_w":"$70",
+      "full_day_w":"$90"
+    }
+  ]
 }
