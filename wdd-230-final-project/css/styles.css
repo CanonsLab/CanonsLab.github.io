@@ -10,9 +10,138 @@
     list-style: none;
 }
 
+h1 {
+    font-size: 80pt;
+}
+
+p {
+    font-size: 30pt;
+    background-color: rgb(232, 23, 23);
+    padding: .5rem;
+}
+
+h2, h3, ul {
+    background-color: rgb(232, 23, 23);
+}
+
+h2 {
+    font-size: 40pt;
+    text-decoration: underline;
+}
+
+li {
+    background-color: rgb(232, 23, 23);
+    font-size: 30pt;
+}
+
+a:link {
+    text-decoration: none;
+    font-size: 16pt;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(232, 23, 23);
+}
+
+a:hover {
+    background-color: rgb(240, 138, 138);
+}
+
+.navigation {
+    display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-between;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 5%;
+    padding: 0;
+    background: none;
+}
+
+.nav-li {
+    display: block;
+    flex: 0 1 auto; /* Default */
+    list-style-type: none;
+    background: none;
+}
+
+.top {
+    display: grid;
+    grid-template-rows: 20px 200px 1fr;
+    grid-template-columns: 150px 1fr 150px 1fr;
+}
+
+.top-img {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.top-phrase {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background: none;
+    font-size: 50pt;
+    flex-grow: 1;
+    text-decoration: none;
+    margin: auto;
+}
+
+.button {
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    text-decoration: none;
+    font-size: 40pt;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(232, 23, 23);
+    margin: auto;
+}
+
+.button:hover {
+    background-color: rgb(240, 138, 138);
+}
+
+#current-temp, #weather-description, #humidity, #dayimg, .day-weather, .dayname, .day-label, .flex {
+    background-color: rgb(232, 23, 23);
+}
+
+.day-weather, .dayname, .day-label {
+    font-size: 20pt;
+}
+
+
+.rental-sum, .stats, .content, .agree-info, .agree-title {
+    background-color: rgb(232, 23, 23);
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.google-maps h2, .reserve, .request-res, .tour-main h2, .tour-main p {
+    background: none;
+}
+
+.rental-sum, .stats, form, table{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.content {
+    border: none;
+}
+
 .res-main {
     display: flex;
-    /* add more flex declaratioins here */
+    flex-direction: column;
+}
+
+.site-title {
+    text-decoration: none;
+    font-size: 25pt;
 }
 
 table {
@@ -30,9 +159,13 @@ td {
     background-color: rgb(232, 23, 23);
 }
 
+footer p {
+    background: none;
+}
+
 .fa {
     padding: 20px;
-    font-size: 30px;
+    font-size: 30pt;
     width: 20px;
     text-align: center;
     text-decoration: none;
@@ -58,6 +191,68 @@ background: #bb0000;
 color: white;
 }
 
-@media screen and (max-width: 930px) {}
+@media screen and (max-width: 1165px) {
+    .top-img {
+        width: 700px;
+    }
+    
+    .rental-sum, .stats, table {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 
-@media screen and (max-width: 630px) {}
+    p, li, .fa {
+        font-size: 20pt;
+    }
+
+    h1 {
+        font-size: 50pt;
+    }
+
+    h2, .top-phrase{
+        font-size: 30pt;
+    }
+
+    .button {
+        font-size: 40pt;
+    }
+
+    .day-weather, .dayname, .day-label {
+        font-size: 15pt;
+    }
+}
+@media screen and (max-width: 770px) {
+    .navigation {
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+    
+    .top-img {
+        width: 400px;
+    }
+    
+    .rental-sum, .stats, table {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    p, li, .fa {
+        font-size: 10pt;
+    }
+
+    h1 {
+        font-size: 30pt;
+    }
+
+    h2, .top-phrase{
+        font-size: 20pt;
+    }
+
+    .button {
+        font-size: 20pt;
+    }
+
+    .day-weather, .dayname, .day-label {
+        font-size: 15pt;
+    }
+}
