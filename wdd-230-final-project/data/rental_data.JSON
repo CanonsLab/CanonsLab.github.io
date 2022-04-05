@@ -8,7 +8,7 @@
     "half_day_w":"$25",
     "full_day_w":"$35"
   }],
-  "rental_two": [{
+  "rental_two": {
     "id":2, 
     "name":"Honda Dio Scooter",
     "max_persons":2,
@@ -16,7 +16,7 @@
     "full_day_r":"$40",
     "half_day_w":"$35",
     "full_day_w":"$45"
-  }],
+  },
   "rental_three": [{
     "id":3, 
     "name":"Honda PCX150 Scooter",
