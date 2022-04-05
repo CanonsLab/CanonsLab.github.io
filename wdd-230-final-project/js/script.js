@@ -1,6 +1,6 @@
 const weatherInfo = 'https://api.openweathermap.org/data/2.5/weather?id=3530103&units=imperial&appid=3c3f395856a764140e870d104facaf6d'
 const forecastInfo = 'https://api.openweathermap.org/data/2.5/forecast?id=3530103&units=imperial&appid=3c3f395856a764140e870d104facaf6d'
-const rentalInfo = 'wdd-230-final-project\data\rental_data.JSON'
+const rentalInfo = 'https://raw.githubusercontent.com/CanonsLab/CanonsLab.github.io/main/wdd-230-final-project/data/rental_data.JSON'
 
 const daynames = [
 	"Sunday",
@@ -79,5 +79,40 @@ fetch(rentalInfo)
 	.then((response) => response.json())
 	.then((jsObject) => {
 		console.log(jsObject);
-		document.getElementById('cell-one').textContent = jsObject.rental_one[0].name;
+		document.getElementById('scooter-one').textContent = jsObject.rental_one[0].name;
+		document.getElementById('capacity-one').textContent = jsObject.rental_one[0].max_persons;
+		document.getElementById('h-day-r-one').textContent = jsObject.rental_one[0].half_day_r;
+		document.getElementById('f-day-r-one').textContent = jsObject.rental_one[0].full_day_r;
+		document.getElementById('h-day-w-one').textContent = jsObject.rental_one[0].half_day_w;
+		document.getElementById('f-day-w-one').textContent = jsObject.rental_one[0].full_day_w;
+		document.getElementById('scooter-two').textContent = jsObject.rental_two[1].name;
+		document.getElementById('capacity-two').textContent = jsObject.rental_two[1].max_persons;
+		document.getElementById('h-day-r-two').textContent = jsObject.rental_two[1].half_day_r;
+		document.getElementById('f-day-r-two').textContent = jsObject.rental_two[1].full_day_r;
+		document.getElementById('h-day-w-two').textContent = jsObject.rental_two[1].half_day_w;
+		document.getElementById('f-day-w-two').textContent = jsObject.rental_two[1].full_day_w;
+		document.getElementById('scooter-three').textContent = jsObject.rental_one[2].name;
+		document.getElementById('capacity-three').textContent = jsObject.rental_one[2].max_persons;
+		document.getElementById('h-day-r-three').textContent = jsObject.rental_one[2].half_day_r;
+		document.getElementById('f-day-r-three').textContent = jsObject.rental_one[2].full_day_r;
+		document.getElementById('h-day-w-three').textContent = jsObject.rental_one[2].half_day_w;
+		document.getElementById('f-day-w-three').textContent = jsObject.rental_one[2].full_day_w;
+		document.getElementById('atv-one').textContent = jsObject.rental_one[3].name;
+		document.getElementById('capacity-four').textContent = jsObject.rental_one[3].max_persons;
+		document.getElementById('h-day-r-four').textContent = jsObject.rental_one[3].half_day_r;
+		document.getElementById('f-day-r-four').textContent = jsObject.rental_one[3].full_day_r;
+		document.getElementById('h-day-w-four').textContent = jsObject.rental_one[3].half_day_w;
+		document.getElementById('f-day-w-four').textContent = jsObject.rental_one[3].full_day_w;
+		document.getElementById('jeep-one').textContent = jsObject.rental_one[4].name;
+		document.getElementById('capacity-five').textContent = jsObject.rental_one[4].max_persons;
+		document.getElementById('h-day-r-five').textContent = jsObject.rental_one[4].half_day_r;
+		document.getElementById('f-day-r-five').textContent = jsObject.rental_one[4].full_day_r;
+		document.getElementById('h-day-w-five').textContent = jsObject.rental_one[4].half_day_w;
+		document.getElementById('f-day-w-five').textContent = jsObject.rental_one[4].full_day_w;
+		document.getElementById('jeep-two').textContent = jsObject.rental_one[5].name;
+		document.getElementById('capacity-six').textContent = jsObject.rental_one[5].max_persons;
+		document.getElementById('h-day-r-six').textContent = jsObject.rental_one[5].half_day_r;
+		document.getElementById('f-day-r-six').textContent = jsObject.rental_one[5].full_day_r;
+		document.getElementById('h-day-w-six').textContent = jsObject.rental_one[5].half_day_w;
+		document.getElementById('f-day-w-six').textContent = jsObject.rental_one[5].full_day_w;
 	});
