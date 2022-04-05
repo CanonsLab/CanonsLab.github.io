@@ -125,6 +125,27 @@ a:hover {
     background: none;
 }
 
+.beautiful {
+    text-decoration: none;
+}
+
+.sites a, .sites ul, .sites li{
+    background: none;
+    border: none;
+}
+
+.sites li {
+    font-size: 20pt;
+}
+
+.site {
+    transition: all 2s ease;
+}
+
+.site:hover {
+    transform: scale(1.3);
+}
+
 .rental-sum, .stats, form, table{
     margin-left: 20%;
     margin-right: 20%;
