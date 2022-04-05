@@ -90,7 +90,7 @@ fetch(rentalInfo)
 		document.getElementById('h-day-r-two').textContent = jsObject.rental_two[1].half_day_r;
 		document.getElementById('f-day-r-two').textContent = jsObject.rental_two[1].full_day_r;
 		document.getElementById('h-day-w-two').textContent = jsObject.rental_two[1].half_day_w;
-		document.getElementById('f-day-w-two').textContent = jsObject.rental_two[1].full_day_w;
+		document.getElementById('f-day-w-two').textContent = jsObject.rental_[1].full_day_w;
 		document.getElementById('scooter-three').textContent = jsObject.rental_one[2].name;
 		document.getElementById('capacity-three').textContent = jsObject.rental_one[2].max_persons;
 		document.getElementById('h-day-r-three').textContent = jsObject.rental_one[2].half_day_r;
