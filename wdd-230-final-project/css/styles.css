@@ -151,6 +151,8 @@ a:hover {
     margin-right: 20%;
 }
 
+
+
 .content {
     border: none;
 }
@@ -210,6 +212,24 @@ color: white;
 .fa-youtube {
 background: #bb0000;
 color: white;
+}
+
+fieldset {
+    justify-content: left;
+    padding: 10px;
+}
+
+label, input {
+    display: block;
+}
+
+input {
+    margin-left: 20%;
+}
+
+label {
+    margin-bottom: 20px;
+    margin-left: 1%;
 }
 
 @media screen and (max-width: 1165px) {
