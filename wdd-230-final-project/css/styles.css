@@ -7,6 +7,11 @@
     justify-self: center;
 }
 
+.res-main {
+    display: flex;
+    /* add more flex declaratioins here */
+}
+
 table {
     border: 2px solid black;
     background-color: rgb(232, 23, 23);

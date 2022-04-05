@@ -28,8 +28,51 @@
             </ul>
         </nav>
 
-        <main>
-
+        <main class="res-main">
+            <h1>Rental Agreement Info:</h1>
+            <ul>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at time of rental.</li>
+                <li>No one under 12 years of age is allowed to ride on the scooters.</li>
+                <li>Fuel charge not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is free of charge.</li>
+                <li>Reservations rate requires 24 hour prior notification.</li>
+                <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+                <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+                <li>Rentals may be returned to either location.</li>
+            </ul>
+            <h1>Request Reservation</h1>
+            <form method="get" action="https://canonslab.github.io/wdd-230-final-project/form-conf.html">
+                <fieldset name="uinfo">
+                    <legend></legend>
+                    <label class="form-field"><div>Full Name*</div><input type="text" pattern="[A-Za-z]" name="fname" required></label>
+                    <label class="form-field"><div>Email*</div><input type="email" name="email" required></label>
+                    <label class="form-field"><div>Phone Number*</div><input type="tel" name="phone" required></label>
+                    <label class="form-field"><div>Preffered Language*</div><input type="text" pattern="[A-Za-z]" name="planguage" required></label>
+                </fieldset>
+                <fieldset name="sinfo">
+                    <label class="form-field"><div>Requested Date for Rental*</div><input type="date" name="sdate" required></label>
+                    <label class="form-field"><div>Requested Time for Rental (Time Zone- EST)*</div><input type="time" name="sdatetime" required></label>
+                    <label class="form-field"><div>Requested Amount of Time for Rental*</div><input type="number" min="1" max="8" name="atime" required></label>
+                    <label class="form-field"><div>Rental Type*</div>
+                        <select name="rtype" required>
+                                <option value="">Select Requested Rental &#9662;</option>
+                            <option value="Honda Metro Scooter">Honda Metro Scooter</option>
+                            <option value="Honda Dio Scooter">Honda Dio Scooter</option>
+                            <option value="Honda PCX150 Scooter">Honda PCX150 Scooter</option>
+                            <option value="Honda Pioneer ATV">Honda Pioneer ATV</option>
+                            <option value="Jeep Wrangler-4 door with a/c">Jeep Wrangler-4 door with a/c</option>
+                            <option value="Jeep Wrangler-4 door with a/c">Jeep Wrangler-4 door with a/c</option>
+                        </select>
+                </fieldset>
+                <fieldset name="ninfo">
+                    <label class="form-field"><div>Other Notes:</div><textarea id="notes" name="notes" placeholder="Questions or comments?"></textarea></label>
+                </fieldset>
+                <fieldset name="submission">
+                    <input type="submit" value = "Request Rental">
+                </fieldset>
+            </form>
         </main>
 
         <footer>
