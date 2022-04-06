@@ -184,6 +184,10 @@ picture img {
     display: list-item;
 }
 
+footer {
+    background-color: rgb(0, 162, 255);
+}
+
 @media only screen and (max-width: 1165px) {
     h1 h2 {
         font-family: 'Abril Fatface', cursive;
