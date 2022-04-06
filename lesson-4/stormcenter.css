@@ -68,6 +68,19 @@ form label.sbs {
     padding: .4rem 0;
 }
 
+main {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+fieldset {
+    padding: 20px;
+}
+
+div, input{
+    padding: 10px;
+}
+
 @media screen and (max-width: 930px) {
     .container {margin: 1rem auto; display:grid; grid-template-columns: 1fr 1fr; max-width: 930px;}
     .item:hover {box-shadow: none}
