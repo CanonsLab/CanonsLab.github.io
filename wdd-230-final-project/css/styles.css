@@ -309,4 +309,8 @@ label {
     .day-weather, .dayname, .day-label {
         font-size: 15pt;
     }
+
+    .ti {
+        width: 120px;
+    }
 }
