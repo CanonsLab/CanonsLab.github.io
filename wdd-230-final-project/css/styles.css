@@ -274,6 +274,10 @@ label {
     .day-weather, .dayname, .day-label {
         font-size: 15pt;
     }
+
+    .sites ul li {
+        font-size: 16pt;
+    }
 }
 @media screen and (max-width: 770px) {
     .navigation {
@@ -312,5 +316,9 @@ label {
 
     .ti {
         width: 120px;
+    }
+
+    .sites p {
+        font-size: 20pt;
     }
 }
