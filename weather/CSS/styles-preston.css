@@ -1,4 +1,6 @@
-
+.logo {
+    width:fit-content;
+}
 
 body {
     font-family: 'Roboto Serif', sans-serif;
@@ -178,9 +180,11 @@ picture img {
     max-width: 100%;
 }
 
+.navigation li {
+    display: list-item;
+}
 
-
-@media only screen and (max-width: 32.5em) {
+@media only screen and (max-width: 1165px) {
     h1 h2 {
         font-family: 'Abril Fatface', cursive;
     }
@@ -300,9 +304,13 @@ picture img {
         right: 30px;
         content: "Small";
     }
+
+    .navigation li {
+        display: none;
+    }
 }
 
-@media only screen and (min-width: 56em) {
+@media only screen and (max-width: 770px) {
     h1 h2 {
         font-family: 'Abril Fatface', cursive;
     }
@@ -450,8 +458,8 @@ picture img {
         right: 30px;
         content: "Large";
     }
-}
 
-.navigation li {
-    display: list-item;
+    .navigation li {
+        display: none;
+    }
 }
